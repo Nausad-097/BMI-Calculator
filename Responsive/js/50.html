@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <div class="row">
+            <h1>This is a heading</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim accusamus, dolore adipisci quos dignissimos quae possimus ratione ipsa quam sed accusantium molestiae animi repudiandae delectus!</p>
+        </div>
+    </div>
+    <script>
+       var str="This is a string";
+       console.log(str);
+       var pos=str.indexOf('is');
+       console.log(pos);
+       pos=str.lastIndexOf('is');
+       console.log(pos);
+       var sstr=str.slice(1,6);
+       //substring takes only +ve value
+       //substr start from 1 ,2nd para is len
+       // toUpperCase fun
+       //concat()   charCodeAt() give unicode
+       //str[1] gives h
+       console.log(sstr);
+
+       let a="u";
+       {
+        let a="u6";
+        console.log(a);//u6
+       }
+       console.log(a);//u
+
+       const b="dfkhglig"; // cant changed
+
+       let emp={
+        name:"joy",
+        age:10,
+        channel:"fjuyf",
+        "channel 2":"jhfjhg"
+       }
+       console.log(emp)
+
+       //let names=[1,2,"names",undefined];
+      /* let names=new Array(1,2,"names",undefined)
+       names=names.sort();
+       names.push(65);
+       console.log(names)
+       let a=new Array(23); create an array of size 23
+       */
+    </script>
+</body>
+</html>

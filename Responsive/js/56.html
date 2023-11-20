@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div id="main" class="co">
+<ul id="nav">
+    <li>Home</li>
+    <li>About</li>
+    <li>conact</li>
+    <li>servics</li>
+    <li>More about us</li>
+</ul>
+    </div>
+    <div class="co">
+        Another Container
+    </div>
+    <script>
+        let main=document.getElementById('main')
+        console.log(main)
+        let nav=document.getElementById('nav')
+        console.log(nav)
+       // nav.innerHTML="<li>Home</li>"
+        let con=document.getElementsByClassName("co")
+        console.log(con)
+
+        let sel=document.querySelector('.co')
+        console.log("selector return",sel)
+
+        let sele=document.querySelectorAll('#nav>li')
+        console.log("selector return",sele)
+    </script>
+</body>
+</html>

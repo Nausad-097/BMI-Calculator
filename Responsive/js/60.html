@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow fun</title>
+</head>
+<body>
+    <div class="con">
+        This is a arrow function
+    </div>
+    <script>
+        //arrow function
+        let great =()=>{
+            console.log("Good Morning")
+        }
+        let sum=(a,b)=>a+b
+        let half= a =>a/2; //for single arg only
+        let grt=()=>console.log("lknfljgb")
+        great()
+        // setTimeout(() => {
+        //     console.log("we are inside settimeout function")
+        // }, 3000);
+        let obj={
+            names:["harry","Joy","rohan","kk"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log("hello " + student)
+                })
+            }
+        }
+        obj.speak()
+    </script>
+</body>
+</html>

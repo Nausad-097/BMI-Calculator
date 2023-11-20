@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settime out setinterval</title>
+</head>
+<body>
+    <div class="con">
+        this is a container
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        //setTimeout-->alllow to run fun only once after the interval of time
+        //clearTimeout-->alllow to run fun only repeatedly after the interval of time
+        function great(name,age){
+            console.log("Hello Morning"+ name + age)
+        }
+        //great();
+        // timeout=setTimeout(great,5000,"Joy",25) 
+        // console.log(timeout) 
+
+        // clearTimeout(timeout)
+        // intervalid=setInterval(great,3000)
+        // clearInterval(intervalid)
+
+        function displayTime(){
+            time=new Date()
+            console.log(time)
+            document.getElementById('time').innerHTML=time
+        }
+        setInterval(displayTime,1000)
+    </script>
+</body>
+</html>
